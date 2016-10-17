@@ -394,3 +394,17 @@ Container@EDITOR_WORLD_ROOT:
 			Align: Left
 			Font: Bold
 			Contrast: true
+		MenuButton@MAP_GENERATOR_BUTTON:
+			X: 655
+			Logic: MenuButtonsChromeLogic, MapGeneratorMenuButtonLogic
+			MenuContainer: INGAME_MENU
+			HideIngameUI: true
+			Pause: true
+			Width: 160
+			Height: 25
+			Text: Map generator
+			TooltipText: Map generator
+			TooltipContainer: TOOLTIP_CONTAINER
+			Font: Bold
+			Key: f8
+

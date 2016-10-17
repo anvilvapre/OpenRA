@@ -82,6 +82,7 @@ Assemblies:
 	common|OpenRA.Mods.Common.dll
 	ra|OpenRA.Mods.RA.dll
 	cnc|OpenRA.Mods.Cnc.dll
+        OpenRA.MapGenerator.dll
 
 ChromeLayout:
 	ra|chrome/ingame.yaml
@@ -124,6 +125,7 @@ ChromeLayout:
 	ra|chrome/missionbrowser.yaml
 	ra|chrome/confirmation-dialogs.yaml
 	ra|chrome/editor.yaml
+	ra|chrome/editor-map-generator.yaml
 
 Weapons:
 	ra|weapons/explosions.yaml

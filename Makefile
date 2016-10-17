@@ -123,7 +123,7 @@ PROGRAMS += pdefault
 platforms: $(pdefault_TARGET)
 
 # Mods Common
-mod_common_SRCS := $(shell find OpenRA.Mods.Common/ -iname '*.cs')
+mod_common_SRCS := $(shell find OpenRA.Mods.Common/ -iname '*.cs' && find OpenRA.MapGenerator/ -iname "*cs")
 mod_common_TARGET = mods/common/OpenRA.Mods.Common.dll
 mod_common_KIND = library
 mod_common_DEPS = $(game_TARGET)
@@ -331,7 +331,7 @@ all: dependencies core tools
 clean:
 	@-$(RM_F) *.exe *.dll *.dylib *.dll.config ./OpenRA*/*.dll ./OpenRA*/*.mdb *.mdb mods/**/*.dll mods/**/*.mdb *.resources
 	@-$(RM_RF) ./*/bin ./*/obj
-	@-$(RM_RF) ./thirdparty/download
+#	@-$(RM_RF) ./thirdparty/download
 
 distclean: clean
 
